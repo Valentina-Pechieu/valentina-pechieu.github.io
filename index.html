@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valentina Pechieu Salinas | CV</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -15,30 +19,31 @@
     }
 
     .page {
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 40px 28px 60px;
+      padding: 30px 28px 55px;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
     .header h1 {
       margin: 0;
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       font-weight: 700;
+      letter-spacing: 0.2px;
     }
 
     .header .title {
-      margin-top: 6px;
-      font-size: 1.1rem;
+      margin-top: 8px;
+      font-size: 1.05rem;
       font-weight: 400;
     }
 
     .contact-row {
-      margin-top: 24px;
+      margin-top: 26px;
       padding-bottom: 14px;
       border-bottom: 1px solid #000;
       display: flex;
@@ -59,10 +64,13 @@
     }
 
     .section-title {
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #000;
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
-      margin: 0 0 10px;
+      letter-spacing: 0.2px;
     }
 
     .section p {
@@ -74,6 +82,12 @@
     .edu-item,
     .extra-item {
       margin-bottom: 18px;
+    }
+
+    .job:last-child,
+    .edu-item:last-child,
+    .extra-item:last-child {
+      margin-bottom: 0;
     }
 
     .job-header,
@@ -107,27 +121,48 @@
     }
 
     .footer-links {
-      margin-top: 34px;
+      margin-top: 36px;
       padding-top: 18px;
       border-top: 1px solid #000;
-      text-align: center;
-      font-size: 0.98rem;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
     }
 
-    .footer-links a {
-      color: #000;
+    .footer-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #2563eb;
+      color: #ffffff;
       text-decoration: none;
       font-weight: 700;
-      margin: 0 10px;
+      padding: 11px 16px;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+      font-size: 0.97rem;
     }
 
-    @media (max-width: 680px) {
+    .footer-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .footer-btn svg {
+      width: 17px;
+      height: 17px;
+      fill: #ffffff;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 700px) {
       .page {
-        padding: 28px 18px 40px;
+        padding: 24px 18px 40px;
       }
 
       .header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       .contact-row,
@@ -140,6 +175,14 @@
 
       .contact-row {
         gap: 8px;
+      }
+
+      .footer-links {
+        align-items: stretch;
+      }
+
+      .footer-btn {
+        width: 100%;
       }
     }
   </style>
@@ -161,7 +204,11 @@
     <section class="section">
       <h2 class="section-title">Resumen</h2>
       <p>
-        Profesional con experiencia en análisis y gestión de información, elaboración de reportes y apoyo en procesos de mejora para la toma de decisiones. He complementado mi formación con estudios en Ciencia de Datos y conocimientos en herramientas como Excel, Python y Power BI. Me considero una persona analítica, organizada y proactiva, con muchas ganas de seguir aprendiendo, aportar al trabajo en equipo y desarrollarme profesionalmente.
+        Profesional con experiencia en análisis y gestión de información, elaboración de reportes y apoyo en procesos
+        de mejora para la toma de decisiones. He complementado mi formación con estudios en Ciencia de Datos y
+        conocimientos en herramientas como Excel, Python y Power BI. Me considero una persona analítica, organizada
+        y proactiva, con muchas ganas de seguir aprendiendo, aportar al trabajo en equipo y desarrollarme
+        profesionalmente.
       </p>
     </section>
 
@@ -171,10 +218,12 @@
       <article class="job">
         <div class="job-header">
           <span>Analista de apoyo en Subdirección de Calidad y Experiencia</span>
-          <span>2022 - 2023</span>
+          <span>2022 – 2023</span>
         </div>
         <div class="institution">Universidad Adolfo Ibáñez</div>
-        <p>Me desempeñé en el análisis y gestión de información clave para la toma de decisiones estratégicas.</p>
+        <p>
+          Me desempeñé en el análisis y gestión de información clave para la toma de decisiones estratégicas.
+        </p>
         <ul>
           <li>Generé y administré información y reportes clave, asegurando su correcta trazabilidad y disponibilidad para la toma de decisiones.</li>
           <li>Realicé el control y la actualización de reportes, manteniendo la consistencia y confiabilidad de la información.</li>
@@ -188,7 +237,10 @@
           <span>2022</span>
         </div>
         <div class="institution">Universidad Adolfo Ibáñez</div>
-        <p>Recopilé datos relacionados con los syllabus de los cursos impartidos en el Departamento de Ingeniería y generé reportes sobre sus mediciones de calidad.</p>
+        <p>
+          Recopilé datos relacionados con los syllabus de los cursos impartidos en el Departamento de Ingeniería y generé
+          reportes sobre sus mediciones de calidad.
+        </p>
         <ul>
           <li>Recopilé y gestioné documentación académica asociada a syllabus y procesos de titulación.</li>
           <li>Analicé flujos de información del proceso de defensas de título, identificando puntos críticos y oportunidades de mejora.</li>
@@ -202,7 +254,10 @@
           <span>2017</span>
         </div>
         <div class="institution">Almacenes París</div>
-        <p>Apoyé en la tienda ubicada en Quilpué en la realización del inventario de los productos remanentes de la temporada y en la atención al cliente final en la sala de ventas.</p>
+        <p>
+          Apoyé en la tienda ubicada en Quilpué en la realización del inventario de los productos remanentes de la temporada
+          y en la atención al cliente final en la sala de ventas.
+        </p>
       </article>
     </section>
 
@@ -239,7 +294,8 @@
           <span>2018</span>
         </div>
         <p>
-          Brindé asistencia a las voluntarias durante las visitas a pacientes hospitalarios, dedicando tiempo a la interacción con los niños en la sala y colaborando en la recaudación de fondos llevada a cabo por la fundación.
+          Brindé asistencia a las voluntarias durante las visitas a pacientes hospitalarios, dedicando tiempo a la interacción
+          con los niños en la sala y colaborando en la recaudación de fondos llevada a cabo por la fundación.
         </p>
       </article>
 
@@ -249,14 +305,30 @@
           <span>2004-2017</span>
         </div>
         <p>
-          Participé activamente en el establecimiento de una nueva división dentro de mi grupo y desempeñé roles de guía y subguía en mi equipo.
+          Participé activamente en el establecimiento de una nueva división dentro de mi grupo y desempeñé roles de guía
+          y subguía en mi equipo.
         </p>
       </article>
     </section>
 
     <div class="footer-links">
-      <a href="CV_Valentina_Pechieu_Salinas.pdf" download>Descargar CV en PDF</a>
-      <a href="https://github.com/Valentina-Pechieu" target="_blank">GitHub</a>
+      <a href="./CV_Valentina_Pechieu_Salinas.pdf" download class="footer-btn">
+        Descargar CV en PDF
+      </a>
+
+      <a href="https://github.com/Valentina-Pechieu" target="_blank" class="footer-btn" aria-label="GitHub">
+        GitHub
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+          0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+          -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07
+          -.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2
+          -.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.52 7.52 0 0 1 4 0c1.53-1.04 2.2-.82
+          2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75
+          -3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01
+          8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+        </svg>
+      </a>
     </div>
   </main>
 </body>
