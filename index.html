@@ -83,6 +83,11 @@
       text-align: justify;
     }
 
+    .resume-text {
+      max-width: 760px;
+      margin: 0 auto 10px;
+    }
+
     .job,
     .edu-item,
     .extra-item {
@@ -107,7 +112,11 @@
     }
 
     .institution {
-      margin: 2px 0 6px;
+      margin: 4px 0 8px;
+      font-weight: 700;
+    }
+
+    .edu-school {
       font-weight: 400;
     }
 
@@ -128,8 +137,10 @@
     .footer-links {
       margin-top: 36px;
       padding-top: 18px;
+      width: 100%;
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 14px;
       flex-wrap: wrap;
     }
@@ -147,6 +158,7 @@
       border-radius: 8px;
       transition: background 0.2s ease;
       font-size: 0.97rem;
+      min-height: 44px;
     }
 
     .footer-btn:hover {
@@ -158,6 +170,18 @@
       height: 17px;
       fill: #ffffff;
       flex-shrink: 0;
+    }
+
+    .icon-btn {
+      width: 44px;
+      min-width: 44px;
+      height: 44px;
+      padding: 0;
+    }
+
+    .icon-btn svg {
+      width: 20px;
+      height: 20px;
     }
 
     @media (max-width: 700px) {
@@ -188,6 +212,15 @@
       .footer-btn {
         width: 100%;
       }
+
+      .icon-btn {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .resume-text {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -207,7 +240,7 @@
 
     <section class="section">
       <h2 class="section-title no-line">Resumen</h2>
-      <p>
+      <p class="resume-text">
         Ingeniera Civil Industrial con experiencia en análisis y gestión de información, elaboración de reportes y seguimiento de indicadores, con orientación a la mejora continua y la optimización de procesos. He complementado mi formación con estudios en Ciencia de Datos, fortaleciendo mis capacidades para trabajar con datos e identificar oportunidades de mejora. Cuento con manejo de herramientas como Excel, Python, Power BI y Monday. Destaco por mi perfil analítico, organización y proactividad, con interés en seguir desarrollándome profesionalmente y asumir nuevos desafíos.
       </p>
     </section>
@@ -264,14 +297,20 @@
 
       <article class="edu-item">
         <div class="edu-header">
-          <span>Bootcamp Ciencia de Datos - Talento Digital para Chile / SENCE</span>
+          <span>
+            <strong>Bootcamp Ciencia de Datos</strong>
+            <span class="edu-school"> - Talento Digital para Chile / SENCE</span>
+          </span>
           <span>2025</span>
         </div>
       </article>
 
       <article class="edu-item">
         <div class="edu-header">
-          <span>Ingeniería Civil Industrial - Universidad Adolfo Ibáñez</span>
+          <span>
+            <strong>Ingeniería Civil Industrial</strong>
+            <span class="edu-school"> - Universidad Adolfo Ibáñez</span>
+          </span>
           <span>2022</span>
         </div>
       </article>
@@ -299,7 +338,7 @@
       <article class="extra-item">
         <div class="extra-header">
           <span>Participación en la Asociación Guías y Scout de Chile</span>
-          <span>2004-2017</span>
+          <span>2004 – 2017</span>
         </div>
         <p>
           Participé activamente en la formación de una nueva división dentro de mi grupo, asumiendo además roles de guía y subguía, lo que fortaleció mis habilidades de liderazgo, organización y trabajo en equipo.
@@ -309,11 +348,16 @@
 
     <div class="footer-links">
       <a href="./CV_Valentina_Pechieu_Salinas.pdf" download class="footer-btn">
-        Descargar CV en PDF
+        Descargar CV
       </a>
 
-      <a href="https://github.com/Valentina-Pechieu" target="_blank" rel="noopener noreferrer" class="footer-btn" aria-label="GitHub">
-        GitHub
+      <a href="https://www.linkedin.com/in/valentina-pechieu?trk=contact-info" target="_blank" rel="noopener noreferrer" class="footer-btn icon-btn" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h4V24h-4V8Zm7 0h3.83v2.18h.05c.53-1.01 1.84-2.18 3.8-2.18 4.06 0 4.82 2.67 4.82 6.14V24h-4v-7.61c0-1.82-.03-4.16-2.53-4.16-2.53 0-2.92 1.98-2.92 4.03V24h-4V8Z"/>
+        </svg>
+      </a>
+
+      <a href="https://github.com/Valentina-Pechieu" target="_blank" rel="noopener noreferrer" class="footer-btn icon-btn" aria-label="GitHub" title="GitHub">
         <svg viewBox="0 0 16 16" aria-hidden="true">
           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
           0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
