@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentina Pechieu Salinas | CV</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --tag: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 42px 40px 28px;
+      background: linear-gradient(135deg, #eef4ff, #ffffff);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    .hero .subtitle {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 14px;
+    }
+
+    .contact a,
+    .contact span {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.98rem;
+    }
+
+    .actions {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .btn-secondary {
+      background: #f3f4f6;
+      color: var(--text);
+    }
+
+    .btn-secondary:hover {
+      background: #e5e7eb;
+    }
+
+    .content {
+      padding: 32px 40px 40px;
+    }
+
+    section + section {
+      margin-top: 34px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .item {
+      margin-bottom: 24px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+
+    .item-title {
+      font-weight: bold;
+      font-size: 1.02rem;
+    }
+
+    .item-date {
+      color: var(--muted);
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+
+    .item-subtitle {
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: var(--tag);
+      color: var(--accent-dark);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero,
+      .content {
+        padding: 26px 22px;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .item-header {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .item-date {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header class="hero">
+        <h1>Valentina Pechieu Salinas</h1>
+        <p class="subtitle">Ingeniera Civil Industrial</p>
+
+        <div class="contact">
+          <a href="mailto:valentina.pechieu.s@gmail.com">valentina.pechieu.s@gmail.com</a>
+          <a href="tel:+56985509478">+56 9 8550 9478</a>
+          <a href="https://github.com/Valentina-Pechieu" target="_blank">GitHub</a>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="CV.pdf" target="_blank">Descargar CV en PDF</a>
+          <a class="btn btn-secondary" href="mailto:valentina.pechieu.s@gmail.com">Contactar</a>
+        </div>
+      </header>
+
+      <main class="content">
+        <section>
+          <h2>Sobre mí</h2>
+          <p>
+            Profesional con experiencia en análisis y gestión de información,
+            elaboración de reportes y apoyo en procesos de mejora para la toma de decisiones.
+            He complementado mi formación con estudios en Ciencia de Datos y conocimientos
+            en herramientas como Excel, Python y Power BI. Me considero una persona analítica,
+            organizada y proactiva, con muchas ganas de seguir aprendiendo, aportar al trabajo
+            en equipo y desarrollarme profesionalmente.
+          </p>
+        </section>
+
+        <section>
+          <h2>Experiencia laboral</h2>
+
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">Analista de apoyo en Subdirección de Calidad y Experiencia</div>
+              <div class="item-date">2022 – 2023</div>
+            </div>
+            <div class="item-subtitle">Universidad Adolfo Ibáñez</div>
+            <ul>
+              <li>Generé y administré información y reportes clave, asegurando su correcta trazabilidad y disponibilidad para la toma de decisiones.</li>
+              <li>Realicé el control y la actualización de reportes, manteniendo la consistencia y confiabilidad de la información.</li>
+              <li>Integré reportes desarrollados en Excel a la plataforma Monday, mejorando la accesibilidad y el seguimiento de indicadores.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">Práctica profesional</div>
+              <div class="item-date">2022</div>
+            </div>
+            <div class="item-subtitle">Universidad Adolfo Ibáñez</div>
+            <ul>
+              <li>Recopilé y gestioné documentación académica asociada a syllabus y procesos de titulación.</li>
+              <li>Analicé flujos de información del proceso de defensas de título, identificando puntos críticos y oportunidades de mejora.</li>
+              <li>Desarrollé una aplicación destinada a facilitar el envío masivo de correos electrónicos a profesores mediante Python, con miras a una futura expansión.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">Práctica operaria</div>
+              <div class="item-date">2017</div>
+            </div>
+            <div class="item-subtitle">Almacenes París</div>
+            <ul>
+              <li>Apoyé en inventario de productos remanentes de temporada y en atención al cliente en sala de ventas.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Formación académica y complementaria</h2>
+
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">Bootcamp Ciencia de Datos</div>
+              <div class="item-date">2025</div>
+            </div>
+            <div class="item-subtitle">Talento Digital para Chile / SENCE</div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">Ingeniería Civil Industrial</div>
+              <div class="item-date">2022</div>
+            </div>
+            <div class="item-subtitle">Universidad Adolfo Ibáñez</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Habilidades tecnológicas</h2>
+          <div class="skills">
+            <span class="tag">Excel — Intermedio</span>
+            <span class="tag">Python — Intermedio</span>
+            <span class="tag">Monday — Básico</span>
+            <span class="tag">Power BI — Básico</span>
+            <span class="tag">RStudio — Básico</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Información adicional</h2>
+
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">Voluntariado en la Corporación Amor y Vida</div>
+              <div class="item-date">2018</div>
+            </div>
+            <ul>
+              <li>Brindé asistencia a voluntarias durante visitas a pacientes hospitalarios y colaboré en actividades de recaudación de fondos.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">Asociación Guías y Scout de Chile</div>
+              <div class="item-date">2004 – 2017</div>
+            </div>
+            <ul>
+              <li>Participé activamente en la creación de una nueva división y desempeñé roles de guía y subguía dentro de mi equipo.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="footer">
+      Sitio personal de CV • GitHub Pages
+    </div>
+  </div>
+</body>
+</html>
